@@ -1,0 +1,88 @@
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "PT Sans Bold";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+}
+
+body {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  background-color: @white;
+
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  .font-bold();
+  display: block;
+  color: @white;
+  background-color: @bg-lightblue;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: @bg-hoverblue;
+  }
+
+  &:active {
+    background-color: @bg-downblue;
+    color: @down-font;
+  }
+
+  &:disabled {
+    background-color: @bg-disabledgrey;
+  }
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: 1200px;
+  }
+}

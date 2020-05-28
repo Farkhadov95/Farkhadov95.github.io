@@ -1,0 +1,144 @@
+.page-header {
+  min-height: auto;
+  position: relative;
+}
+
+.page-header__wallpaper {
+  height: 389px;
+  // text-transform: initial;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: @bg-lightblue;
+
+  &::after {
+    content: "";
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 26px;
+    width: 320px;
+    background-size: 320px;
+  }
+}
+
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .page-header__wallpaper {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+.page-header__wallpaper-nonindex {
+  height: 158px;
+  background-position: center bottom;
+  background-size: 768px 389px;
+}
+
+.page-header__wallpaper img {
+  width: 281px;
+  height: 214px;
+  margin: 90px auto 85px;
+}
+
+.page-header__wallpaper-nonindex img {
+  width: 229px;
+  height: 42px;
+  margin: 50px auto 67px;
+}
+
+.page-header__text {
+  margin: 0;
+  padding-top: 90px;
+}
+
+.page-header__text span {
+  display: block;
+}
+
+.page-header__title {
+  color: @white;
+  text-transform: uppercase;
+}
+
+.page-header__comment {
+  color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__wallpaper {
+    height: 518px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    &::after {
+      content: "";
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+      display: cover;
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 768px;
+      height: 57px;
+    }
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .page-header__wallpaper {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .page-header__wallpaper img {
+    width: 460px;
+    height: 350px;
+    margin: 77px auto 91px;
+  }
+
+  .page-header__wallpaper-nonindex {
+    height: 290px;
+    background-position: center bottom;
+    background-size: cover;
+  }
+
+  .page-header__wallpaper-nonindex img {
+    width: 460px;
+    height: 80px;
+    margin: 94px auto 116px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wallpaper {
+    height: 518px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    &::after {
+      content: "";
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+      width: 1200px;
+      height: 57px;
+    }
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .page-header__wallpaper {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
+  .page-header__wallpaper img {
+    margin: 78px auto 90px;
+  }
+
+  .page-header__wallpaper-nonindex {
+    height: 301px;
+  }
+
+  .page-header__wallpaper-nonindex img {
+    width: 460px;
+    height: 79px;
+    margin: 102px auto 120px;
+  }
+}

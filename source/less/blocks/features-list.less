@@ -1,0 +1,190 @@
+.features-list {
+  .list-reset();
+  background-color: @white;
+  text-align: start;
+  min-height: 416px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.features-list__item {
+  position: relative;
+}
+
+.features-list__item svg {
+  position: absolute;
+  fill: @bg-lightblue;
+  width: 37px;
+  height: 36px;
+}
+
+.features-list__item-house {
+  position: absolute;
+  top: 26px;
+  left: 22px;
+}
+
+.features-list__item-gift {
+  position: absolute;
+  top: 19px;
+  left: 23px;
+}
+
+.features-list__item-burger {
+  position: absolute;
+  top: 23px;
+  left: 20px;
+}
+
+.features-list__content {
+  width: 210px;
+  margin-left: 70px;
+  min-height: 99px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.features-living {
+  margin-top: 37px;
+}
+
+.features-souvenirs {
+  margin-top: 32px;
+  min-height: 79px;
+}
+
+.features-food {
+  margin-top: 31px;
+  margin-bottom: 39px;
+}
+
+.features-list__title {
+  .font-bold ();
+  .mp-reset();
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.features-list__text {
+  .mp-reset();
+  font-size: 14px;
+  line-height: 21px;
+  color: @darkgrey;
+}
+
+@media (min-width: @tablet-width) {
+  .features-list {
+    min-height: 330px;
+    flex-direction: row;
+  }
+
+  .features-list__item {
+    width: 256px;
+    height: 330px;
+  }
+
+  .features-list__item-souvenirs {
+    order: 2;
+  }
+
+  .features-list__content {
+    width: 163px;
+    min-height: 107px;
+    margin: 162px auto auto;
+    text-align: center;
+  }
+
+  .features-list__title {
+    font-size: 21px;
+  }
+
+  .features-list__text {
+    margin-top: auto;
+  }
+
+  .features-list__text-food {
+    width: 158px;
+    box-sizing: border-box;
+    padding-left: 4px;
+  }
+
+  .features-list__text-block {
+    display: block;
+  }
+
+  .features-list__item-house {
+    top: 60px;
+    left: 90px;
+    width: 75px;
+    height: 72px;
+  }
+
+  .features-list__item-house svg {
+    width: 75px;
+    height: 72px;
+  }
+
+  .features-list__item-gift {
+    top: 57px;
+    left: 94px;
+    width: 64px;
+    height: 75px;
+  }
+
+  .features-list__item-gift svg {
+    width: 64px;
+    height: 75px;
+  }
+
+  .features-list__item-burger {
+    top: 63px;
+    left: 90px;
+    width: 77px;
+    height: 68px;
+  }
+
+  .features-list__item-burger svg {
+    width: 77px;
+    height: 68px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features-list__item {
+    width: 400px;
+  }
+
+  .features-list__content {
+    min-width: 283px;
+  }
+
+  .features-list__text {
+    margin-bottom: 20px;
+  }
+
+  .features__text-block {
+    display: block;
+  }
+
+  .features-list__text-food {
+    width: 283px;
+    padding: 0;
+  }
+
+  .features-list__item-house {
+    top: 60px;
+    left: 161px;
+  }
+
+  .features-list__item-gift {
+    top: 57px;
+    left: 168px;
+  }
+
+  .features-list__item-burger {
+    top: 63px;
+    left: 161px;
+  }
+}

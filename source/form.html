@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content="Sedona, Vacation Destination">
+  <title>Седона: Отзывы </title>
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
+  <header class="page-header">
+    <nav class="main-nav main-nav--nojs main-nav--closed">
+      <div class="main-nav__wrapper">
+        <ul class="site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фото и Видео</a>
+          </li>
+          <li class="site-list__item site-list__item-space">
+            <a>Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+        <button type="button" class="main-nav__close-cross" aria-label="Закрыть"></button>
+      </div>
+
+      <div class="main-nav__logo-item">
+        <a class="main-nav__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип Sedona">
+          </picture>
+        </a>
+        <button type="button" class="main-nav__toggle" aria-label="Меню" value="Меню"></button>
+      </div>
+    </nav>
+
+    <div class="page-header__wallpaper page-header__wallpaper-nonindex">
+      <img src="img/text-sedona.svg" alt="Надпись Седона">
+    </div>
+  </header>
+
+  <script src="js/script-main-nav.js"></script>
+
+  <main class="page-main">
+    <section class="feedback">
+      <h3 class="feedback__title">Оставьте свой отзыв</h3>
+      <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
+
+    <form class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
+    <section class="user-info">
+      <div class="user-info__wrapper">
+        <h3 class="user-info__title">Представьтесь:</h3>
+        <p class="user-info__item">
+          <label for="name">Имя*:</label>
+          <input type="text" id="name" name="firstname" placeholder="Петр">
+        </p>
+        <p class="user-info__item">
+            <label for="surname">Фамилия*:</label>
+            <input type="text" id="surname" name="surname" placeholder="Иванов">
+        </p>
+        <p class="user-info__item">
+          <label for="middle-name">Отчество:</label>
+            <input type="text" id="middle-name" name="middle-name" placeholder="Александрович">
+        </p>
+      </div>
+    </section>
+
+    <section class="contact">
+    <div class="contact__container">
+      <h3 class="contact__title">Контактная информация:</h3>
+      <div class="contact__wrapper">
+        <div class="contact__item contact__phone">
+            <label class="contact__type" for="phone"><span>Контактный</span> телефон*:</label>
+            <div class="contact__input-wrapper phone-wrapper">
+              <input class="contact__input " type="tel" id="phone" name="phone" placeholder="Введите телефон">
+              <button class="contact__button contact__button--phone" type="button" aria-label="Кнопка телефона">
+                <svg width="18" height="18">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+              </button>
+            </div>
+        </div>
+
+        <div class="contact__item contact__email">
+            <label class="contact__type" for="email">Электронная почта*:</label>
+            <div class="contact__input-wrapper email-wrapper">
+              <input class="contact__input" type="email" id="email" name="email" placeholder="Введите e-mail">
+              <button class="contact__button contact__button--email" type="button" aria-label="Кнопка почты">
+                <svg width="20" height="16">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
+              </button>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    </section>
+
+    <section class="impression">
+      <div class="impression__container">
+        <h3 class="impression__title">Ваше Общее впечатление:</h3>
+        <ul class="impression__list">
+          <li class="impression__item">
+            <label class="impression__checkbox">
+              <input class="visually-hidden" type="radio" name="impression" value="possitive">
+              <span class="impression__checkbox-indicator"></span>
+              Скорее положительное
+            </label>
+          </li>
+          <li class="impression__item">
+            <label class="impression__checkbox">
+              <input class="visually-hidden" type="radio" name="impression" value="negative" >
+              <span class="impression__checkbox-indicator"></span>
+              Скорее отрицательное
+            </label>
+          </li>
+          <li class="impression__item">
+            <label class="impression__checkbox">
+              <input class="visually-hidden" type="radio" name="impression" value="mixed">
+              <span class="impression__checkbox-indicator"></span>
+              Затрудняюсь ответить
+            </label>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="visits">
+      <div class="visits__container">
+        <h3 class="visits__title"><span class="visits__title-block">Посещенные</span> достопримечательности:</h3>
+        <ul class="visits__list">
+          <li class="visits__item visits__item--bridge">
+            <div class="visits__checkbox-wrapper">
+              <label class="visits__checkbox">
+                <input class="visually-hidden" type="checkbox" name="Мост Дьявола">
+                <span class="visits__checkbox-indicator"></span>
+                Мост Дьявола
+              </label>
+            </div>
+          </li>
+          <li class="visits__item visits__item--mount">
+            <div class="visits__checkbox-wrapper">
+              <label class="visits__checkbox">
+                <input class="visually-hidden" type="checkbox" name="Гора-Колокол">
+                <span class="visits__checkbox-indicator"></span>
+                Гора-Колокол
+              </label>
+            </div>
+          </li>
+          <li class="visits__item visits__item--park">
+            <div class="visits__checkbox-wrapper">
+              <label class="visits__checkbox">
+                <input class="visually-hidden" type="checkbox" name="Слайд-парк">
+                <span class="visits__checkbox-indicator"></span>
+                Слайд-парк
+              </label>
+            </div>
+          </li>
+          <li class="visits__item visits__item--rock">
+            <div class="visits__checkbox-wrapper">
+              <label class="visits__checkbox">
+                <input class="visually-hidden" type="checkbox" name="Красные скалы">
+                <span class="visits__checkbox-indicator"></span>
+                Красные скалы
+              </label>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="describe">
+      <div class="describe__content">
+        <h3 class="describe__title">Опишите свои эмоции:</h3>
+        <textarea class="describe__textarea" name="text" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+        <div class="describe__button-wrapper">
+          <button class="desctibe_button button" type="submit" aria-label="Отправка формы">ОТПРАВИТЬ ОТЗЫВ</button>
+          <p class="describe__comment">* — обязательные поля</p>
+        </div>
+      </div>
+    </section>
+    </form>
+
+  </main>
+
+  <footer class="page-footer page-footer--form">
+    <h3 class="page-footer__title">#VISITSEDONA</h3>
+    <ul class="page-footer__social social social--form">
+      <li class="social__item social__item--index"><a href="" class="social__link social__link--twitter">
+        <span class="visually-hidden">Мы в Twitter</span>
+        <svg width="17.5" height="14.7">
+          <use xlink:href="#icon-twitter"></use>
+        </svg>
+    </a></li>
+      <li class="social__item social__item--index"><a href="" class="social__link social__link--facebook">
+        <span class="visually-hidden">Мы в Facebook</span>
+        <svg width="8.7" height="19">
+          <use xlink:href="#icon-facebook"></use>
+        </svg>
+      </a></li>
+      <li class="social__item social__item--index"><a href="" class="social__link social__link--youtube">
+        <span class="visually-hidden">Мы в YouTube</span>
+        <svg width="20" height="14">
+          <use xlink:href="#icon-youtube"></use>
+        </svg>
+      </a></li>
+    </ul>
+    <div class="page-footer__subtitles page-footer__subtitles--form">
+      <span>Разработано</span>
+      <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg>
+          <use xlink:href="#icon-htmlacademy"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <section class="modal modal-error">
+    <div class="modal__container modal-error__container">
+      <h3 class="modal__title modal-error__title"><span class="modal__title-block">ЧТО-ТО ПОШЛО</span> НЕ ТАК!</h3>
+      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    </div>
+      <button class="modal__button-error button">OK</button>
+  </section>
+
+  <section class="modal modal-sent">
+    <div class="modal__container modal-sent__container">
+      <h3 class="modal__title modal-sent__title">ВАШ ОТЗЫВ ОТПРАВЛЕН!</h3>
+      <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+      </p>
+    </div>
+    <div class="modal__button-wrapper modal__button-wrapper--sent">
+      <button class="modal__button-sent button">ЗАКРЫТЬ ОКНО</button>
+    </div>
+  </section>
+
+  <script src="js/modal.js"></script>
+
+</body>
+</html>
