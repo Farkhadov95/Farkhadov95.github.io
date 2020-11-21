@@ -1,0 +1,12 @@
+<svg width="0" height="0" class="hidden" xmlns="http://www.w3.org/2000/svg">
+  <symbol viewBox="0 0 32 32" id="cross">
+    <title></title>
+    <path d="M7 7l18 18M7 25L25 7" stroke="red"></path>
+  </symbol>
+  <symbol viewBox="0 0 32 32"  id="menu">
+    <path d="M7 7l18 18M7 25L25 7" stroke="black"></path>
+  </symbol>
+  <symbol viewBox="0 0 32 32" id="Icon_2">
+    <path d="M4 10h24a2 2 0 0 0 0-4H4a2 2 0 0 0 0 4zm24 4H4a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4zm0 8H4a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4z" stroke="black">></path>
+  </symbol>
+</svg>
